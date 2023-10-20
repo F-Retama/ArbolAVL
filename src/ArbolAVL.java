@@ -329,11 +329,11 @@ public class ArbolAVL<T extends Comparable <T>> {
             cont ++;
             NodoAVL<T> nodo = cola.poll();
             if(nodo != null){
-                sb.append(nodo.getDato() + " ("+nodo.getFactorEquilibrio() +") ");
+                sb.append(nodo.getDato() + "-"+nodo.getFactorEquilibrio() +" ");
                 cola.add(nodo.getIzquierda());
                 cola.add(nodo.getDerecha());
             }else
-                sb.append(" -.-  ");
+                sb.append(" _._  ");
             if ((cont & (cont+1)) == 0)
                 sb.append("\n");
         }
