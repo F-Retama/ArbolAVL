@@ -1,2 +1,2 @@
-## Implementación de un árbol binario AVL en Java usando nodos enlazados
-Proyecto escolar de la materia de Estructuras de Datos Avanzadas
+## Implementación completa desde cero
+En la carpeta source se encuentran las clases tanto del tipo de noto utilizado como del árbol que utiliza los nodos anteriores.
