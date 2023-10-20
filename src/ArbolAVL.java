@@ -189,7 +189,7 @@ public class ArbolAVL<T extends Comparable <T>> {
                     arriba.disminuyeFactor();
                 else //"actual" cuelga a la derecha de "arriba"
                     arriba.aumentaFactor();
-                if (arriba.getFactorEquilibrio() == 1 || actual.getFactorEquilibrio() == -1){//se continua subiendo
+                if (arriba.getFactorEquilibrio() == 1 || arriba.getFactorEquilibrio() == -1){//se continua subiendo
                     actual = arriba;
                     arriba = actual.getArriba();
                 }
@@ -329,7 +329,7 @@ public class ArbolAVL<T extends Comparable <T>> {
             cont ++;
             NodoAVL<T> nodo = cola.poll();
             if(nodo != null){
-                sb.append(nodo.getDato() + " f:"+nodo.getFactorEquilibrio() +" ");
+                sb.append(nodo.getDato() + " ("+nodo.getFactorEquilibrio() +") ");
                 cola.add(nodo.getIzquierda());
                 cola.add(nodo.getDerecha());
             }else
